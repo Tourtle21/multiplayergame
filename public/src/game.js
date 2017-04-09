@@ -56,16 +56,16 @@ document.addEventListener("keydown", (e) => {keyState[e.code] = true})
 document.addEventListener("keyup", (e) => {keyState[e.code] = false})
 setInterval(function() {
   if (keyState["ArrowUp"]) {
-    posTop -= 3;
+    posTop -= 5;
   }
   if (keyState["ArrowDown"]) {
-    posTop += 3;
+    posTop += 5;
   }
   if (keyState["ArrowRight"]) {
-    left += 3;
+    left += 5;
   }
   if (keyState["ArrowLeft"]) {
-    left -= 3;
+    left -= 5;
   }
   socket.emit("move", {posTop: posTop, left: left, playerId: playerId});
-}, 30)
+}, 50)
