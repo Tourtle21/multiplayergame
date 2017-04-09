@@ -1,6 +1,6 @@
 
 
-var socket = io.connect('http://localhost:8080/');
+var socket = io.connect('https://lit-forest-65459.herokuapp.com/');
 var playerId = 0;
 var left = 0;
 var posTop = 0;
