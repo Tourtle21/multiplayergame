@@ -33,7 +33,6 @@ socket.on('updated', function(data) {
 })
 
 socket.on('moved', function(data) {
-  console.log(data)
   if (document.getElementById("player" + data.playerId)) {
     move(data.playerId, data.left, data.posTop);
   } else {
